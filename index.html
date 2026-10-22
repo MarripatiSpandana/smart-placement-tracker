@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +7,59 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Smart Placement Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Smart Placement Tracker</h1>
 
-    <p>Track your internship and job applications.</p>
+    <header>
+        <h1>Smart Placement Tracker</h1>
+        <p>Manage your job applications easily</p>
+    </header>
 
-    <h2>Add New Application</h2>
+    <main class="container">
 
-    <label for="company">Company Name:</label>
-    <input type="text" id="company">
+        <section class="dashboard">
+            <div class="card">
+                <h2>12</h2>
+                <p>Applied</p>
+            </div>
 
-    <br><br>
+            <div class="card">
+                <h2>4</h2>
+                <p>Interviews</p>
+            </div>
 
-    <label for="role">Job Role:</label>
-    <input type="text" id="role">
+            <div class="card">
+                <h2>2</h2>
+                <p>Offers</p>
+            </div>
+        </section>
 
-    <br><br>
+        <section class="form-section">
+            <h2>Add New Application</h2>
 
-    <button type="button">Add Application</button>
+            <form>
+                <label for="company">Company Name</label>
+                <input type="text" id="company"
+                       placeholder="Enter company name">
+
+                <label for="role">Job Role</label>
+                <input type="text" id="role"
+                       placeholder="Enter job role">
+
+                <label for="status">Application Status</label>
+                <select id="status">
+                    <option>Applied</option>
+                    <option>Interview</option>
+                    <option>Selected</option>
+                    <option>Rejected</option>
+                </select>
+
+                <button type="button">Add Application</button>
+            </form>
+        </section>
+
+    </main>
+
 </body>
 </html>
